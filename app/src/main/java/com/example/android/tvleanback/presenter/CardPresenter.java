@@ -24,7 +24,6 @@ import android.support.v4.content.ContextCompat;
 import android.view.ViewGroup;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.RequestOptions;
 import com.example.android.tvleanback.R;
 import com.example.android.tvleanback.model.Video;
 
@@ -85,7 +84,7 @@ public class CardPresenter extends Presenter {
 
             Glide.with(cardView.getContext())
                     .load(video.cardImageUrl)
-                    .apply(RequestOptions.errorOf(mDefaultCardImage))
+                    .error(mDefaultCardImage)
                     .into(cardView.getMainImageView());
         }
     }

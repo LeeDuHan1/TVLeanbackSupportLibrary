@@ -16,6 +16,7 @@
 
 package com.example.android.tvleanback.presenter;
 
+import android.app.Fragment;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.support.v17.leanback.widget.Presenter;
@@ -29,10 +30,14 @@ import com.example.android.tvleanback.ui.MainFragment;
 
 public class GridItemPresenter extends Presenter {
     private final MainFragment mainFragment;
+//    private final LiveListFragment liveListFragment;
 
     public GridItemPresenter(MainFragment mainFragment) {
         this.mainFragment = mainFragment;
     }
+//    public GridItemPresenter(LiveListFragment liveListFragment){
+//        this.liveListFragment = liveListFragment;
+//    }
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent) {
