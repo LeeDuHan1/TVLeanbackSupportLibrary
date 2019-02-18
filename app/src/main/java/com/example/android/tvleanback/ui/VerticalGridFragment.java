@@ -110,7 +110,7 @@ public class VerticalGridFragment extends android.support.v17.leanback.app.Verti
             mVideoCursorAdapter.changeCursor(cursor);
         }
     }
-
+    // 테스트 주석 추가3
     @Override
     public void onLoaderReset(Loader<Cursor> loader) {
         mVideoCursorAdapter.changeCursor(null);
